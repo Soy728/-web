@@ -1,0 +1,54 @@
+*{  
+    box-sizing: border-box; /*width값 고정하려고 사용*/
+    margin: 0;
+    letter-spacing: -0.03em;
+    line-height: 1.5;
+    
+}
+.w1200 {  /*w1200은 블록요소니까 마진 auto로 가운데 정렬*/
+    max-width: 1240px;
+    padding: 10px 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    
+     
+}
+
+.notice_sec .notice {
+    max-height: 50px;
+    position: relative;
+    display: flex; /*공지사항이랑 공지글 가로 배치하려고*/
+    align-items: center;
+    padding: 14px 16px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    background-color: #F6F6F6;
+    border-radius: 4px;
+}
+
+.notice_sec .notice .title{
+    color: #999;
+    margin-right: 8px;
+    line-height: 1;
+    white-space: nowrap;
+    font-size: 15px;
+}
+.notice_sec .notice .notice_list{
+    width: 100%;
+    overflow: hidden;
+    padding-inline-start: 20px;
+}
+.notice_sec .notice .notice_list .item{
+    width: 90%;
+    font-size: 15px;
+    color: #666;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+
+

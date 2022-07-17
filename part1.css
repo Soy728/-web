@@ -1,0 +1,98 @@
+.part1 .w1200 .tit_box {
+   
+    display: flex;
+    margin-bottom: 10px;
+
+}
+.part1{text-align: center;}
+.part1 .w1200 .tit_box .text01 {
+   
+    font-size: 28px;
+   
+}
+.part1 .w1200 .tit_box ul{
+    padding-inline-start: 20px;
+}
+.part1 .w1200 .tit_box .text02 li{
+    
+    display: inline-block;
+    padding: 7px 14px;
+    background-color: #F6F6F6;
+    border-radius: 27px;
+    font-size: 16px;
+    
+    transform: scale(0.93);
+}
+
+.part1 .w1200 .tit_box .text02 li:hover{
+    
+    background-color: #6a8518;
+    color: white;
+    font-weight: bold;
+  
+}
+
+.prd_list_box{
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 20px;
+
+}
+.prd1, .prd2, .prd3, .prd4, .prd5{
+    width: 230px;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.prd1 .hoveron, .prd2 .hoveron{
+    width: 240px;
+    
+}
+
+.prd3 .hoveron{
+    width: 220px;
+    margin-left: 10px;
+    
+}
+ .prd_detail{
+    
+    text-align: center;
+    font-size: 17px;
+
+}
+
+.prd_detail .prd_name2{
+    font-weight: bold;
+    margin-top: 3px;
+}
+
+.prd_img{
+    position:relative;
+}
+
+.hoveron{
+    position: absolute;
+    top:0px;
+    left:0px;
+    display: none;
+}
+.prd_img:hover .hoveron{
+    display: block;
+}
+.w1200_2 ul, .w1200_2 li{
+    list-style: none;
+    padding-left: 0px;
+}
+
+.morebutton{
+    display: inline-block;
+    margin-top: 70px;
+
+    border: solid 0.5px #cccccc;
+    padding: 12px 60px;
+    color: rgb(90, 90, 90);
+    border-radius: 3px;
+    text-align: center;
+    font-size: 14px;
+    
+}

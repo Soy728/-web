@@ -1,0 +1,236 @@
+@font-face {
+    font-family: 'AritaDotum';
+    font-weight: 100;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/amore/AritaDotum-Thin.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/amore/AritaDotum-Thin.eot?#iefix') format('embedded-opentype'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/amore/AritaDotum-Thin.woff2') format('woff2'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/amore/AritaDotum-Thin.woff') format('woff'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/amore/AritaDotum-Thin.ttf') format("truetype");
+    font-display: swap;
+}
+@font-face {
+    font-family: 'AritaDotum';
+    font-weight: 300;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/amore/AritaDotum-Light.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/amore/AritaDotum-Light.eot?#iefix') format('embedded-opentype'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/amore/AritaDotum-Light.woff2') format('woff2'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/amore/AritaDotum-Light.woff') format('woff'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/amore/AritaDotum-Light.ttf') format("truetype");
+    font-display: swap;
+}
+@font-face {
+    font-family: 'AritaDotum';
+    font-weight: 500;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/amore/AritaDotum-Medium.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/amore/AritaDotum-Medium.eot?#iefix') format('embedded-opentype'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/amore/AritaDotum-Medium.woff2') format('woff2'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/amore/AritaDotum-Medium.woff') format('woff'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/amore/AritaDotum-Medium.ttf') format("truetype");
+    font-display: swap;
+}
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'AritaDotum';
+    color: #333;
+}
+
+div{
+    display: block; /*원래 block*/
+}
+
+/*맨 위 오설록 바*/
+.header{
+    position:fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    z-index: 100; /*겹치기?*/
+    background: linear-gradient(to bottom, rgba(0,0,0,.25), transparent); /*그림자*/
+    height: 60px;
+    transition: background .3s ease-in-out;
+    
+}
+.wrapper{
+    position:fixed;
+    max-width: 1540px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
+}
+
+.wrapper .inner_box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.wrapper .inner_box .left_box{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.wrapper .inner_box .left_box .logo{
+    width: 140px;
+    margin-top: 20px;
+    margin-left: 50px;
+    
+}
+
+/*배너*/
+
+img{
+    max-width: 100%;
+    height: auto;
+    vertical-align: top;
+    border: 0;
+    z-index: -1;
+}
+
+[name = "slide"] {display: none;}
+
+.main_sec .main_banner ul,li{
+    list-style: none;
+}
+
+.main_sec .main_banner .slidebox{
+    padding: 0;
+   
+}
+.main_sec .main_banner .slidebox .slide{
+
+    display: inline-block;
+}
+.main_sec .main_banner .slidebox .slide1{
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    transform: all .35s;
+    
+}
+.main_sec .main_banner .slidebox .slide2{
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    transform: all .35s;
+   
+}
+.main_sec .main_banner .slidebox .slide3{
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    transform: all .35s;
+    
+}
+.main_sec .main_banner .slidebox .slide4{
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    transform: all .35s;
+    
+}
+
+.slidebox{
+    white-space: nowrap;
+    font-size: 0;
+    overflow: hidden;
+
+}
+
+.slidebox .slide{
+    animation: slide 20s infinite;
+}
+.slide1 label, .slide2 label, .slide3 label, .slide4 label{
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+label.left {
+    left: 40px;
+    
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-image: url('./img/arrow.png');
+    
+}
+
+label.left:hover{
+    background-color: #6e6e6e;
+    opacity: 30%;
+    filter: invert(100%);
+}
+
+label.right {
+    right: 40px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-image: url('./img/arrow2.png');
+
+}
+
+label.right:hover{
+    background-color: #6e6e6e;
+    opacity: 30%;
+    filter: invert(100%);
+}
+  
+/* [id ="slide1"]:checked ~ .slidebox .slide1 {transform: translateX(0);}
+[id ="slide2"]:checked ~ .slidebox .slide2 {transform: translateX(-100%);}
+[id ="slide3"]:checked ~ .slidebox .slide3 {transform: translateX(-200%); }
+[id ="slide4"]:checked ~ .slidebox .slide4 {transform: translateX(-300%);}
+ */
+
+.textbox{
+
+    position: absolute;
+    bottom: 130px;
+    left: 170px;
+    font-weight: normal;
+    font-size: 22px;
+} 
+
+.textbox .text{
+    margin-top: 10px;
+    font-size: 17px;
+    font-weight: normal;
+    transform-origin: left;
+}
+
+.textbox .date{
+    
+    font-size: 14px;
+    margin-top: 10px;
+    font-weight:bold;
+}
+
+@keyframes slide{
+    0% {transform: translateX(0%);} 
+    10% {transform: translateX(0%);} 
+    20%  {transform: translateX(-100%);} 
+    30%  {transform: translateX(-100%);} 
+    40% {transform: translateX(-100%);} 
+    50% {transform: translateX(-200%);}
+    60% {transform: translateX(-200%);} 
+    70% {transform: translateX(-200%);} 
+    80% {transform: translateX(-300%);} 
+    90% {transform: translateX(-300%);} 
+    100% {transform: translateX(0%);} 
+}
+

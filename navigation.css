@@ -1,0 +1,74 @@
+*{
+    list-style: none;
+}
+.nav{
+    padding-left: 10px;
+    margin-top: 10px;
+   
+}
+.link_text{
+    display: block;
+    text-decoration: none;
+    font-size: 18px;
+    color:white;
+    padding-right: 80px;
+
+   
+}    
+
+.nav_list_dep1 {
+    display: flex;
+    font-weight: bold;
+}
+
+.item_dep1 .wrapper {
+    padding: 0;
+    transform-origin: left;
+    margin-top: 30px;
+  
+
+ 
+}
+
+.item_dep1 .wrapper a{
+    color: #333;
+    font-weight: bold;
+    
+ 
+}
+
+.nav_list_dep2, .nav_list_dep3{
+    padding: 0;
+}
+
+.nav .wrapper .item_dep2 .link_text {
+    float: left;
+    margin-bottom: 10px;
+    
+
+}
+
+.nav_list_dep3 .item_dep3 .link_text{
+    font-weight: lighter;
+    
+   
+}
+
+/*아래 요소들 안보이게 하기*/
+.nav_list_dep1 .item_dep1 .nav_list_dep2{
+    display: none;
+    
+}
+
+/*hover시*/
+.nav_list_dep1 .item_dep1:hover .nav_list_dep2{
+    display: flex;
+    background-color: white;
+
+}
+
+
+
+
+
+
